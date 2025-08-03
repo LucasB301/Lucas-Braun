@@ -4,3 +4,153 @@
 ~ $ git add --all
 ~ $ git commit -m "Initial commit"
 ~ $ git push -u origin main
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFFINITY - Trouvez Votre Connexion Par Passion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Primary Black */
+            color: #ffffff; /* White text for contrast */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #333;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FF8C00; /* Orange Vif */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #FFA500; /* Lighter orange on hover */
+        }
+
+        /* Hero section background with subtle gradient */
+        .hero-bg {
+            background: linear-gradient(180deg, #000000 0%, #1a0a00 100%);
+        }
+
+        /* Custom animation for glowing effect */
+        @keyframes glow {
+            0% { text-shadow: 0 0 5px #FF8C00; }
+            50% { text-shadow: 0 0 20px #FFA500, 0 0 30px #FF8C00; }
+            100% { text-shadow: 0 0 5px #FF8C00; }
+        }
+        .glow-text {
+            animation: glow 2s infinite alternate;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center">
+
+    <header class="hero-bg w-full py-16 px-4 md:px-8 text-center relative overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: url('http://googleusercontent.com/image_generation_content/6'); background-size: cover; background-position: center;"></div>
+
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <div class="flex flex-col items-center justify-center mb-8">
+                <div class="text-orange-500 text-7xl md:text-8xl mb-4 animate-pulse">🔥</div>
+                <h1 class="text-6xl md:text-8xl font-extrabold text-orange-500 tracking-tight glow-text">AFFINITY</h1>
+                <p class="text-gray-300 text-xl md:text-2xl mt-4 max-w-2xl mx-auto">
+                    Trouvez votre véritable connexion par passion.
+                </p>
+            </div>
+
+            <h2 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+                Découvrez des liens authentiques basés sur ce qui vous anime.
+            </h2>
+
+            <p class="text-gray-200 text-lg md:text-xl mb-10 max-w-3xl mx-auto">
+                AFFINITY est l'application révolutionnaire qui vous connecte avec des personnes partageant vos passions les plus profondes : sports, arts, loisirs, secteurs d'activité...
+                Ne manquez pas le lancement !
+            </p>
+
+            <div class="bg-gray-800 p-6 md:p-8 rounded-xl shadow-xl max-w-xl mx-auto border border-gray-700">
+                <h3 class="text-2xl md:text-3xl font-semibold text-white mb-6">Soyez les premiers informés !</h3>
+                <form name="contact" method="POST" data-netlify="true" action="/merci.html" class="flex flex-col md:flex-row gap-4">
+                    <input type="email" name="email" placeholder="Votre adresse email" required
+                           class="flex-grow p-4 rounded-lg bg-gray-700 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-orange-500 border border-gray-600 text-lg">
+                    <button type="submit"
+                            class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-4 px-8 rounded-lg text-xl transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+                        Recevoir les mises à jour
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="w-full py-16 px-4 md:px-8 bg-black text-center">
+        <h2 class="text-3xl md:text-4xl font-bold text-white mb-12">Ce qui rend AFFINITY unique</h2>
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800">
+                <div class="text-orange-500 text-5xl mb-4">🎯</div>
+                <h3 class="text-xl font-semibold text-white mb-2">Compatibilité Précise</h3>
+                <p class="text-gray-300">Évaluez vos passions en pourcentage pour des correspondances ultra-pertinentes.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800">
+                <div class="text-orange-500 text-5xl mb-4">💬</div>
+                <h3 class="text-xl font-semibold text-white mb-2">Connexions Authentiques</h3>
+                <p class="text-gray-300">Démarrez des conversations significatives avec ceux qui partagent vos centres d'intérêt.</p>
+            </div>
+            <div class="bg-gray-900 p-6 rounded-xl shadow-lg border border-gray-800">
+                <div class="text-orange-500 text-5xl mb-4">✨</div>
+                <h3 class="text-xl font-semibold text-white mb-2">Interface Intuitive</h3>
+                <p class="text-gray-300">Un design élégant et facile à utiliser pour une expérience fluide.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full py-8 px-4 md:px-8 bg-gray-900 text-center text-gray-400 text-sm">
+        <p>&copy; AFFINITY. Tous droits réservés.</p>
+        <p class="mt-2">Suivez-nous sur <a href="#" class="text-orange-500 hover:underline">Facebook</a> | <a href="#" class="text-orange-500 hover:underline">Instagram</a></p>
+    </footer>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merci pour votre inscription - AFFINITY</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000000; /* Primary Black */
+            color: #ffffff; /* White text for contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div class="max-w-xl mx-auto p-8 bg-gray-900 rounded-xl shadow-lg border border-gray-700">
+        <div class="text-orange-500 text-7xl mb-6">🎉</div>
+        <h1 class="text-4xl md:text-5xl font-bold text-white mb-4">Merci pour votre intérêt !</h1>
+        <p class="text-lg md:text-xl text-gray-300 mb-8">
+            Votre adresse e-mail a bien été enregistrée. Nous vous tiendrons informé(e) des avancées d'AFFINITY et de notre campagne de crowdfunding.
+        </p>
+        <a href="/" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+            Retour à la page d'accueil
+        </a>
+    </div>
+</body>
+</html>
+
